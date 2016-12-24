@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+data=[]
+with open("E_out.txt") as f:
+	for line in f:
+		data.append(float(line))
+num_bins = 30
+# the histogram of the data
+n, bins, patches = plt.hist(data, num_bins, histtype='bar',facecolor='blue')
+plt.xlabel('E_out')
+plt.ylabel('Frequency')
+plt.axis([0, 0.8, 0, 2000])
+plt.show()
