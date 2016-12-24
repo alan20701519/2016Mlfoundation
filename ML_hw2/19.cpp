@@ -111,6 +111,7 @@ int main(){
 	getData(test_data, "hw2_test.dat");
 	E_in = getBestE_in(train_data, bestH, bestDim);
 	E_out = getE_out(test_data, bestH, bestDim);
+	cout << "Dimension = " << bestDim+1 << endl;
 	cout << "Min E_in = " << E_in << endl;
 	cout << "Min E_out = " << E_out << endl;
 
