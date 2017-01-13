@@ -97,6 +97,6 @@ int main(){
 	}
 	cout << "Averate E_in = " << totalE_in/ITERATION << endl;
 	cout << "Averate E_out = " << totalE_out/ITERATION << endl;
-
+	cout << endl
 	return 0;
 }
